@@ -1,0 +1,21 @@
+[project]
+requires-python = "==3.12.4"
+
+[tool.poetry]
+name = "click-2644"
+version = "1.0.0"
+authors = ["Grzegorz Milka <grzegorzmilka@gmail.com>"]
+description = "Repro for click#2644."
+readme = "README.md"
+packages = [{ include = "repro" }]
+
+[tool.poetry.scripts]
+click-2644 = "repro.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
